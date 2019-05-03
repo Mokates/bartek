@@ -11,7 +11,7 @@ local UIS = game:GetService("UserInputService")
 
 local Debounce = false
 
-UIS.InputBegan:Connect(Function(input)
+UIS.InputBegan:Connect(Function(input))
     if Input.KeyCode == Enum.KeyCode.R then
         if Debounce == true then return end
         RemoveEvent:FireServer(Debounce)
